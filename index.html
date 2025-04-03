@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Infografía CRISP-DM</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body class="bg-gray-50 font-sans scroll-smooth">
+  <div class="max-w-3xl mx-auto p-6" id="infografia">
+    <h1 class="text-4xl font-bold text-center text-blue-700 mb-10">🧠📊 CRISP-DM Cheat Sheet 📊🧠</h1>
+
+    <!-- Secciones -->
+    <section class="bg-white rounded-2xl shadow-md p-6 mb-6 hover:shadow-lg transition duration-300" title="Fase 1: Objetivos del negocio">
+      <h2 class="text-2xl font-semibold mb-2">🏢 Comprensión del negocio</h2>
+      <p class="mb-1"><strong>🎯 Objetivo:</strong> Alinear el análisis con los objetivos del negocio.</p>
+      <p class="mb-1"><strong>🛠️ ¿Cómo funciona?</strong> Se identifican metas y se transforman en tareas de análisis.</p>
+      <p class="mb-1"><strong>🌍 Ejemplo:</strong> Predecir abandono de clientes para un e-commerce.</p>
+    </section>
+
+    <section class="bg-white rounded-2xl shadow-md p-6 mb-6 hover:shadow-lg transition duration-300" title="Fase 2: Conoce tus datos">
+      <h2 class="text-2xl font-semibold mb-2">🔍 Comprensión de los datos</h2>
+      <p class="mb-1"><strong>🎯 Objetivo:</strong> Explorar y entender los datos disponibles.</p>
+      <p class="mb-1"><strong>🛠️ ¿Cómo funciona?</strong> Revisión de calidad, formatos, y estadísticas.</p>
+      <p class="mb-1"><strong>🌍 Ejemplo:</strong> Identificar campos vacíos o valores extremos en clientes.</p>
+    </section>
+
+    <section class="bg-white rounded-2xl shadow-md p-6 mb-6 hover:shadow-lg transition duration-300" title="Fase 3: Deja los datos listos">
+      <h2 class="text-2xl font-semibold mb-2">🧹 Preparación de los datos</h2>
+      <p class="mb-1"><strong>🎯 Objetivo:</strong> Transformar los datos en un formato útil.</p>
+      <p class="mb-1"><strong>🛠️ ¿Cómo funciona?</strong> Limpieza, integración y transformación de variables.</p>
+      <p class="mb-1"><strong>🌍 Ejemplo:</strong> Normalizar ingresos y codificar categorías.</p>
+    </section>
+
+    <section class="bg-white rounded-2xl shadow-md p-6 mb-6 hover:shadow-lg transition duration-300" title="Fase 4: Modelar para predecir">
+      <h2 class="text-2xl font-semibold mb-2">🧪 Modelado</h2>
+      <p class="mb-1"><strong>🎯 Objetivo:</strong> Crear modelos predictivos o clasificadores.</p>
+      <p class="mb-1"><strong>🛠️ ¿Cómo funciona?</strong> Elección de algoritmo y entrenamiento con datos preparados.</p>
+      <p class="mb-1"><strong>🌍 Ejemplo:</strong> Árbol de decisión para clasificación de churn.</p>
+    </section>
+
+    <section class="bg-white rounded-2xl shadow-md p-6 mb-6 hover:shadow-lg transition duration-300" title="Fase 5: Validación del modelo">
+      <h2 class="text-2xl font-semibold mb-2">📈 Evaluación</h2>
+      <p class="mb-1"><strong>🎯 Objetivo:</strong> Validar rendimiento del modelo.</p>
+      <p class="mb-1"><strong>🛠️ ¿Cómo funciona?</strong> Comparar métricas con los objetivos definidos.</p>
+      <p class="mb-1"><strong>🌍 Ejemplo:</strong> Evaluar precisión del modelo en test de churn.</p>
+    </section>
+
+    <section class="bg-white rounded-2xl shadow-md p-6 mb-6 hover:shadow-lg transition duration-300" title="Fase 6: Llevarlo a producción">
+      <h2 class="text-2xl font-semibold mb-2">🚀 Despliegue</h2>
+      <p class="mb-1"><strong>🎯 Objetivo:</strong> Implementar el modelo en producción.</p>
+      <p class="mb-1"><strong>🛠️ ¿Cómo funciona?</strong> Se integra vía API, dashboard o aplicación.</p>
+      <p class="mb-1"><strong>🌍 Ejemplo:</strong> Recomendador en un e-commerce en tiempo real.</p>
+    </section>
+
+    <div class="text-center">
+      <button onclick="exportarPDF()" class="bg-blue-600 text-white px-6 py-3 rounded-full shadow-md hover:bg-blue-700 transition">📥 Exportar a PDF</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
